@@ -1,9 +1,9 @@
 # grant_matcher.py
 from utils import preprocess_text, extract_keywords_from_doc, compute_tfidf_similarity, sentence_model, SIMILARITY_WEIGHTS, nlp
-from grants_db import fetch_all_grants # Corrected import
+from grants_db import fetch_all_grants
 from sentence_transformers import util
 from datetime import datetime, timezone
-from typing import List, Dict, Optional, Tuple # Corrected and added typing imports
+from typing import List, Dict, Optional, Tuple
 import re
 
 def match_grant(website_raw_text: str, website_doc, grant: Dict) -> Dict:
@@ -19,12 +19,12 @@ def match_grant(website_raw_text: str, website_doc, grant: Dict) -> Dict:
         "link": grant.get("link")
     }
 
-    website_text_clean: str = website_doc.text if website_doc else preprocess_text(website_raw_text) # Added type hint
-    website_keywords: set = extract_keywords_from_doc(website_doc) if website_doc else set(re.findall(r'\b\w+\b', website_text_clean)) # Added type hint
+    website_text_clean: str = website_doc.text if website_doc else preprocess_text(website_raw_text)
+    website_keywords: set = extract_keywords_from_doc(website_doc) if website_doc else set(re.findall(r'\b\w+\b', website_text_clean))
 
     deadline: Optional[datetime] = grant.get('application_deadline')
     if deadline:
-        now_aware: datetime = datetime.now(timezone.utc).astimezone(deadline.tzinfo) if deadline.tzinfo else datetime.now() # Added type hint
+        now_aware: datetime = datetime.now(timezone.utc).astimezone(deadline.tzinfo) if deadline.tzinfo else datetime.now()
         if deadline < now_aware:
             match_details["is_eligible"] = False
             match_details["reasons_for_ineligibility"].append("Deadline has passed.")
@@ -43,7 +43,7 @@ def match_grant(website_raw_text: str, website_doc, grant: Dict) -> Dict:
         f"{' '.join(grant.get('geographic_eligibility', []))} "
         f"{' '.join(grant.get('keywords', []))}"
     )
-    grant_text_clean: str = preprocess_text(grant_text) # Added type hint
+    grant_text_clean: str = preprocess_text(grant_text)
 
     embedding_sim: float = 0.0
     if sentence_model:
@@ -60,7 +60,7 @@ def match_grant(website_raw_text: str, website_doc, grant: Dict) -> Dict:
     
     grant_keywords: set = db_keywords
     if not grant_keywords and nlp:
-        grant_doc_for_keywords = nlp(grant_text_clean)
+        grant_doc_for_keywords = nlp(preprocess_text(grant_text)) # Use grant_text for keywords if DB is empty
         grant_keywords = extract_keywords_from_doc(grant_doc_for_keywords)
 
     overlap_score: float = len(website_keywords.intersection(grant_keywords)) / len(grant_keywords) if grant_keywords else 0.0

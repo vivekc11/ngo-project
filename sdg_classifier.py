@@ -2,7 +2,7 @@
 import yaml
 import re
 from collections import defaultdict
-from typing import List, Dict # Corrected and added typing imports
+from typing import List, Dict
 from utils import preprocess_text, nlp
 
 class SDGClassifier:
@@ -51,7 +51,6 @@ class SDGClassifier:
                     break
         return list(found_sdgs)
 
-# The __main__ block is for testing this module directly, not used by the main app flow
 if __name__ == "__main__":
     classifier = SDGClassifier()
     test_texts = [

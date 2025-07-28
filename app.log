@@ -1,0 +1,446 @@
+2025-07-25 14:01:35,636 - __main__ - INFO - 
+================================================================================
+2025-07-25 14:01:35,639 - __main__ - INFO - Starting NGO Grant Scraper (FundsforNGOs.org) - Deep Scrape & Pagination
+2025-07-25 14:01:35,639 - __main__ - INFO - This will fetch grants from multiple pages, classify SDGs, and store them in your DB.
+2025-07-25 14:01:35,639 - __main__ - INFO - Existing grants with full details will be skipped.
+2025-07-25 14:01:35,639 - __main__ - INFO - ================================================================================
+
+2025-07-25 14:01:35,639 - __main__ - INFO - Attempting to scrape listing page: https://www2.fundsforngos.org/category/latest-funds-for-ngos/page/1/
+2025-07-25 14:01:36,900 - __main__ - INFO - Finished processing 0 grants on page 1.
+2025-07-25 14:01:41,903 - __main__ - INFO - Attempting to scrape listing page: https://www2.fundsforngos.org/category/latest-funds-for-ngos/page/2/
+2025-07-25 14:04:13,000 - __main__ - INFO - Finished processing 0 grants on page 2.
+2025-07-25 14:04:18,001 - __main__ - INFO - Attempting to scrape listing page: https://www2.fundsforngos.org/category/latest-funds-for-ngos/page/3/
+2025-07-25 14:06:28,859 - __main__ - INFO - 
+================================================================================
+2025-07-25 14:06:28,864 - __main__ - INFO - Starting NGO Grant Scraper (FundsforNGOs.org) - Deep Scrape & Pagination
+2025-07-25 14:06:28,864 - __main__ - INFO - This will fetch grants from multiple pages, classify SDGs, and store them in your DB.
+2025-07-25 14:06:28,864 - __main__ - INFO - Existing grants with full details will be skipped.
+2025-07-25 14:06:28,867 - __main__ - INFO - ================================================================================
+
+2025-07-25 14:06:28,867 - __main__ - INFO - Attempting to scrape listing page: https://www2.fundsforngos.org/category/latest-funds-for-ngos/page/1/
+2025-07-25 14:06:30,626 - __main__ - ERROR - [Scraper General Error] An unexpected error occurred on listing page https://www2.fundsforngos.org/category/latest-funds-for-ngos/page/1/: name 'cite' is not defined
+Traceback (most recent call last):
+  File "c:\Users\VivekChatani\Desktop\Creware\ngo-copy\scrape_grants.py", line 153, in scrape_fundsforngos
+    description_short_tag = article.select_one("div.entry-content p") [cite: 1522]
+                                                                      ^^^^
+NameError: name 'cite' is not defined
+2025-07-25 14:06:30,626 - __main__ - INFO - Attempting to scrape listing page: https://www2.fundsforngos.org/category/latest-funds-for-ngos/page/2/
+2025-07-25 14:06:31,160 - __main__ - ERROR - [Scraper General Error] An unexpected error occurred on listing page https://www2.fundsforngos.org/category/latest-funds-for-ngos/page/2/: name 'cite' is not defined
+Traceback (most recent call last):
+  File "c:\Users\VivekChatani\Desktop\Creware\ngo-copy\scrape_grants.py", line 153, in scrape_fundsforngos
+    description_short_tag = article.select_one("div.entry-content p") [cite: 1522]
+                                                                      ^^^^
+NameError: name 'cite' is not defined
+2025-07-25 14:06:31,160 - __main__ - INFO - Attempting to scrape listing page: https://www2.fundsforngos.org/category/latest-funds-for-ngos/page/3/
+2025-07-25 14:06:31,605 - __main__ - ERROR - [Scraper General Error] An unexpected error occurred on listing page https://www2.fundsforngos.org/category/latest-funds-for-ngos/page/3/: name 'cite' is not defined
+Traceback (most recent call last):
+  File "c:\Users\VivekChatani\Desktop\Creware\ngo-copy\scrape_grants.py", line 153, in scrape_fundsforngos
+    description_short_tag = article.select_one("div.entry-content p") [cite: 1522]
+                                                                      ^^^^
+NameError: name 'cite' is not defined
+2025-07-25 14:06:31,608 - __main__ - INFO - 
+Finished scraping process. 0 grants processed and attempted to be stored/updated.
+2025-07-25 14:06:31,609 - __main__ - INFO - ================================================================================
+
+2025-07-25 14:15:38,607 - __main__ - INFO - 
+================================================================================
+2025-07-25 14:15:38,607 - __main__ - INFO - Starting NGO Grant Scraper (FundsforNGOs.org) - Deep Scrape & Pagination
+2025-07-25 14:15:38,607 - __main__ - INFO - This will fetch grants from multiple pages, classify SDGs, and store them in your DB.
+2025-07-25 14:15:38,607 - __main__ - INFO - Existing grants with full details will be skipped.
+2025-07-25 14:15:38,611 - __main__ - INFO - ================================================================================
+
+2025-07-25 14:15:38,611 - __main__ - INFO - Attempting to scrape listing page: https://www2.fundsforngos.org/category/latest-funds-for-ngos/page/1/
+2025-07-25 14:15:39,947 - __main__ - INFO - Found grant on listing page: 'Call for Applications: De Boer-van Staveren Fund (Netherlands)'
+2025-07-25 14:15:41,057 - __main__ - INFO - Successfully inserted: 'Call for Applications: De Boer-van Staveren Fund (Netherlands)' (SDGs: )
+2025-07-25 14:15:43,063 - __main__ - INFO - Found grant on listing page: 'SSF call for EU Horizon Europe Research Application Support (Sweden)'
+2025-07-25 14:15:44,160 - __main__ - INFO - Successfully inserted: 'SSF call for EU Horizon Europe Research Application Support (Sweden)' (SDGs: )
+2025-07-25 14:15:46,162 - __main__ - INFO - Found grant on listing page: 'Call for Letters of Inquiry for Small Grants – Mediterranean Basin Biodiversity Hotspot'
+2025-07-25 14:15:47,473 - __main__ - INFO - Successfully inserted: 'Call for Letters of Inquiry for Small Grants – Mediterranean Basin Biodiversity Hotspot' (SDGs: )
+2025-07-25 14:15:49,477 - __main__ - INFO - Found grant on listing page: 'Gender Equality & Digital Safety: €6M in Grants'
+2025-07-25 14:15:50,368 - __main__ - INFO - Successfully inserted: 'Gender Equality & Digital Safety: €6M in Grants' (SDGs: sdg_goal_17_partnerships_for_the_goals)
+2025-07-25 14:15:52,382 - __main__ - INFO - Found grant on listing page: 'Applications open for Health Care Advocates International Fund (US)'
+2025-07-25 14:15:53,273 - __main__ - INFO - Successfully inserted: 'Applications open for Health Care Advocates International Fund (US)' (SDGs: sdg_goal_3_good_health_and_well_being)
+2025-07-25 14:15:55,277 - __main__ - INFO - Found grant on listing page: 'Call for Proposals: Operational Digital Platforms'
+2025-07-25 14:15:57,170 - __main__ - INFO - Successfully inserted: 'Call for Proposals: Operational Digital Platforms' (SDGs: )
+2025-07-25 14:15:59,174 - __main__ - INFO - Found grant on listing page: 'Call for EOIs: Implementing Partner for the Protection, Return and Reintegration Program for Migrants in Chad'
+2025-07-25 14:16:01,736 - __main__ - INFO - Successfully inserted: 'Call for EOIs: Implementing Partner for the Protection, Return and Reintegration Program for Migrants in Chad' (SDGs: )
+2025-07-25 14:16:03,745 - __main__ - INFO - Found grant on listing page: 'Call for Proposals to Write a Book on the Mountain Gorilla Ecosystem in Rwanda'
+2025-07-25 14:16:04,742 - __main__ - INFO - Successfully inserted: 'Call for Proposals to Write a Book on the Mountain Gorilla Ecosystem in Rwanda' (SDGs: )
+2025-07-25 14:16:06,744 - __main__ - INFO - Found grant on listing page: 'ACNI Small Capital Grants Programme in United Kingdom'
+2025-07-25 14:16:08,457 - __main__ - INFO - Successfully inserted: 'ACNI Small Capital Grants Programme in United Kingdom' (SDGs: )
+2025-07-25 14:16:10,459 - __main__ - INFO - Found grant on listing page: 'Toronto Arts Council launches Open Door Grant Program (Canada)'
+2025-07-25 14:16:11,609 - __main__ - INFO - Successfully inserted: 'Toronto Arts Council launches Open Door Grant Program (Canada)' (SDGs: )
+2025-07-25 14:16:13,611 - __main__ - INFO - Found grant on listing page: 'Visual/Media Arts Projects Grants in Canada'
+2025-07-25 14:16:15,884 - __main__ - INFO - Successfully inserted: 'Visual/Media Arts Projects Grants in Canada' (SDGs: )
+2025-07-25 14:16:17,887 - __main__ - INFO - Found grant on listing page: 'Call for Applications: Farm Credit Canada AgriSpirit Fund'
+2025-07-25 14:16:19,576 - __main__ - INFO - Successfully inserted: 'Call for Applications: Farm Credit Canada AgriSpirit Fund' (SDGs: )
+2025-07-25 14:16:25,925 - __main__ - INFO - Found grant on listing page: 'Prevention and Response to Gender-Based Violence in Territories Impacted by the Cabo Delgado Crisis (Mozambique)'
+2025-07-25 14:16:28,173 - __main__ - INFO - Successfully inserted: 'Prevention and Response to Gender-Based Violence in Territories Impacted by the Cabo Delgado Crisis (Mozambique)' (SDGs: )
+2025-07-25 14:16:30,185 - __main__ - INFO - Found grant on listing page: 'United States: Yamaha Outdoor Access Initiative 2025'
+2025-07-25 14:16:31,889 - __main__ - INFO - Successfully inserted: 'United States: Yamaha Outdoor Access Initiative 2025' (SDGs: )
+2025-07-25 14:16:33,894 - __main__ - INFO - Found grant on listing page: 'Applications open for Arts Centre Funding Programme in Ireland'
+2025-07-25 14:16:35,616 - __main__ - INFO - Successfully inserted: 'Applications open for Arts Centre Funding Programme in Ireland' (SDGs: )
+2025-07-25 14:16:37,619 - __main__ - INFO - Found grant on listing page: 'Toowoomba Regional Council Community Support Grant Program in Australia'
+2025-07-25 14:16:39,845 - __main__ - INFO - Successfully inserted: 'Toowoomba Regional Council Community Support Grant Program in Australia' (SDGs: )
+2025-07-25 14:16:41,847 - __main__ - INFO - Found grant on listing page: 'CFAs: Community Economic Development Grant Program in Australia'
+2025-07-25 14:16:42,901 - __main__ - INFO - Successfully inserted: 'CFAs: Community Economic Development Grant Program in Australia' (SDGs: )
+2025-07-25 14:16:44,904 - __main__ - INFO - Found grant on listing page: 'Grants for Professionals Documenting the War in Ukraine'
+2025-07-25 14:16:47,445 - __main__ - INFO - Successfully inserted: 'Grants for Professionals Documenting the War in Ukraine' (SDGs: )
+2025-07-25 14:16:49,449 - __main__ - INFO - Found grant on listing page: 'CFAs: Empowering Young People through Skill-Building and Engagement Opportunities in Syria'
+2025-07-25 14:16:51,928 - __main__ - INFO - Successfully inserted: 'CFAs: Empowering Young People through Skill-Building and Engagement Opportunities in Syria' (SDGs: sdg_goal_9_industry_innovation_and_infrastructure, sdg_goal_4_quality_education, sdg_goal_17_partnerships_for_the_goals)
+2025-07-25 14:16:53,929 - __main__ - INFO - Found grant on listing page: 'Call for RFPs: Selection of Cooperating Partner for the Implementation of Vocational Training and Livelihoods in Palestine'
+2025-07-25 14:16:56,094 - __main__ - INFO - Successfully inserted: 'Call for RFPs: Selection of Cooperating Partner for the Implementation of Vocational Training and Livelihoods in Palestine' (SDGs: sdg_goal_4_quality_education)
+2025-07-25 14:16:58,097 - __main__ - INFO - Found grant on listing page: 'CFPs: Support Implementation of Protection Sensitive Reception Conditions, Linkages of Refugees/Asylum Seekers and Local Communities (Serbia)'
+2025-07-25 14:16:59,937 - __main__ - INFO - Successfully inserted: 'CFPs: Support Implementation of Protection Sensitive Reception Conditions, Linkages of Refugees/Asylum Seekers and Local Communities (Serbia)' (SDGs: )
+2025-07-25 14:17:01,940 - __main__ - INFO - Found grant on listing page: 'CFPs: Legal Assistance and Advocacy in Asylum Procedures and Statelessness Prevention (Serbia)'
+2025-07-25 14:17:04,174 - __main__ - INFO - Successfully inserted: 'CFPs: Legal Assistance and Advocacy in Asylum Procedures and Statelessness Prevention (Serbia)' (SDGs: )
+2025-07-25 14:17:06,175 - __main__ - INFO - Found grant on listing page: 'Toronto Arts Council’s Music Projects Grant in Canada'
+2025-07-25 14:17:08,293 - __main__ - INFO - Successfully inserted: 'Toronto Arts Council’s Music Projects Grant in Canada' (SDGs: )
+2025-07-25 14:17:10,296 - __main__ - INFO - Found grant on listing page: 'Applications open for Theatre Projects Grant Program in Canada'
+2025-07-25 14:17:12,267 - __main__ - INFO - Successfully inserted: 'Applications open for Theatre Projects Grant Program in Canada' (SDGs: )
+2025-07-25 14:17:14,268 - __main__ - INFO - Found grant on listing page: 'CFPs: Toowoomba Regional Council Environment Grant Program in Australia'
+2025-07-25 14:17:16,180 - __main__ - INFO - Successfully inserted: 'CFPs: Toowoomba Regional Council Environment Grant Program in Australia' (SDGs: sdg_goal_7_affordable_and_clean_energy)
+2025-07-25 14:17:18,181 - __main__ - INFO - Found grant on listing page: 'Elder Justice Innovation Grants Program (United States)'
+2025-07-25 14:17:20,250 - __main__ - INFO - Successfully inserted: 'Elder Justice Innovation Grants Program (United States)' (SDGs: )
+2025-07-25 14:17:22,253 - __main__ - INFO - Found grant on listing page: 'NOFO: Innovative Rehabilitation Training Program in the US'
+2025-07-25 14:17:24,397 - __main__ - INFO - Successfully inserted: 'NOFO: Innovative Rehabilitation Training Program in the US' (SDGs: )
+2025-07-25 14:17:26,399 - __main__ - INFO - Found grant on listing page: 'India: WCT-Biodiversity, Ecosystems, and Endangered Species Grants Programme 2025'
+2025-07-25 14:17:28,243 - __main__ - INFO - Successfully inserted: 'India: WCT-Biodiversity, Ecosystems, and Endangered Species Grants Programme 2025' (SDGs: )
+2025-07-25 14:17:30,246 - __main__ - INFO - Found grant on listing page: 'Uplift Young Lives: Global Funding for Child-Focused Projects'
+2025-07-25 14:17:31,969 - __main__ - INFO - Successfully inserted: 'Uplift Young Lives: Global Funding for Child-Focused Projects' (SDGs: )
+2025-07-25 14:17:33,971 - __main__ - INFO - Found grant on listing page: 'Call for Proposals: SME-led Plastic Recycling for a Circular Economy in Pakistan'
+2025-07-25 14:17:36,317 - __main__ - INFO - Successfully inserted: 'Call for Proposals: SME-led Plastic Recycling for a Circular Economy in Pakistan' (SDGs: )
+2025-07-25 14:17:38,339 - __main__ - INFO - Found grant on listing page: 'Climate Policy and Governance and Clean Energy in South Africa'
+2025-07-25 14:17:40,855 - __main__ - INFO - Successfully inserted: 'Climate Policy and Governance and Clean Energy in South Africa' (SDGs: sdg_goal_13_climate_action, sdg_goal_17_partnerships_for_the_goals)
+2025-07-25 14:17:42,857 - __main__ - INFO - Found grant on listing page: 'Open Call: Goethe-Institut Project Space Grant'
+2025-07-25 14:17:45,073 - __main__ - INFO - Successfully inserted: 'Open Call: Goethe-Institut Project Space Grant' (SDGs: )
+2025-07-25 14:17:47,075 - __main__ - INFO - Found grant on listing page: 'Toowoomba Regional Council Youth Grants Program in Australia'
+2025-07-25 14:17:49,012 - __main__ - INFO - Successfully inserted: 'Toowoomba Regional Council Youth Grants Program in Australia' (SDGs: )
+2025-07-25 14:17:55,426 - __main__ - INFO - Found grant on listing page: 'Sport and Recreation Community Grants Program in Australia'
+2025-07-25 14:17:57,947 - __main__ - INFO - Successfully inserted: 'Sport and Recreation Community Grants Program in Australia' (SDGs: )
+2025-07-25 14:17:59,950 - __main__ - INFO - Found grant on listing page: 'Sports Tourism Event Grant Program in Australia'
+2025-07-25 14:18:02,064 - __main__ - INFO - Successfully inserted: 'Sports Tourism Event Grant Program in Australia' (SDGs: )
+2025-07-25 14:18:04,065 - __main__ - INFO - Found grant on listing page: 'Request for Applications: Media Artists Program (Canada)'
+2025-07-25 14:18:06,031 - __main__ - INFO - Successfully inserted: 'Request for Applications: Media Artists Program (Canada)' (SDGs: )
+2025-07-25 14:18:08,032 - __main__ - INFO - Found grant on listing page: 'Preventive Health and Health Services Block Grant in the US'
+2025-07-25 14:18:09,785 - __main__ - INFO - Successfully inserted: 'Preventive Health and Health Services Block Grant in the US' (SDGs: )
+2025-07-25 14:18:11,786 - __main__ - INFO - Found grant on listing page: 'CFPs: Tribal Adult Protective Services Demonstration Grants in the US'
+2025-07-25 14:18:13,560 - __main__ - INFO - Successfully inserted: 'CFPs: Tribal Adult Protective Services Demonstration Grants in the US' (SDGs: )
+2025-07-25 14:18:15,565 - __main__ - INFO - Found grant on listing page: 'ScottishPower Foundation Art for Climate Fund in United Kingdom'
+2025-07-25 14:18:17,620 - __main__ - INFO - Successfully inserted: 'ScottishPower Foundation Art for Climate Fund in United Kingdom' (SDGs: )
+2025-07-25 14:18:19,621 - __main__ - INFO - Found grant on listing page: 'Call for Applications: “People and Places” Medium Grant Program (UK)'
+2025-07-25 14:18:21,902 - __main__ - INFO - Successfully inserted: 'Call for Applications: “People and Places” Medium Grant Program (UK)' (SDGs: )
+2025-07-25 14:18:23,904 - __main__ - INFO - Found grant on listing page: 'SVRI Grant – GBV in Higher Education Institutions with a Focus on STEM'
+2025-07-25 14:18:27,023 - __main__ - INFO - Successfully inserted: 'SVRI Grant – GBV in Higher Education Institutions with a Focus on STEM' (SDGs: )
+2025-07-25 14:18:29,026 - __main__ - INFO - Found grant on listing page: 'Deaf and Disabled People’s Organisations Fund in United Kingdom'
+2025-07-25 14:18:31,321 - __main__ - INFO - Successfully inserted: 'Deaf and Disabled People’s Organisations Fund in United Kingdom' (SDGs: )
+2025-07-25 14:18:33,325 - __main__ - INFO - Found grant on listing page: 'Call for Entries: National Lottery Awards for All England – Environment (UK)'
+2025-07-25 14:18:35,636 - __main__ - INFO - Successfully inserted: 'Call for Entries: National Lottery Awards for All England – Environment (UK)' (SDGs: )
+2025-07-25 14:18:37,638 - __main__ - INFO - Found grant on listing page: 'Spark Grants to Advance Gender Equity in the U.S. and Israel'
+2025-07-25 14:18:40,380 - __main__ - INFO - Successfully inserted: 'Spark Grants to Advance Gender Equity in the U.S. and Israel' (SDGs: )
+2025-07-25 14:18:42,383 - __main__ - INFO - Found grant on listing page: 'JFPP Small Grant Program in Japan and Cambodia'
+2025-07-25 14:18:43,162 - __main__ - INFO - Successfully inserted: 'JFPP Small Grant Program in Japan and Cambodia' (SDGs: )
+2025-07-25 14:18:45,165 - __main__ - INFO - Found grant on listing page: 'CFPs: Platform Development for Human Rights and Gender Courses – Indonesia'
+2025-07-25 14:18:47,850 - __main__ - INFO - Successfully inserted: 'CFPs: Platform Development for Human Rights and Gender Courses – Indonesia' (SDGs: )
+2025-07-25 14:18:49,864 - __main__ - INFO - Found grant on listing page: 'SHINE SA Sexual Health Week Community Grant Program in Australia'
+2025-07-25 14:18:51,901 - __main__ - INFO - Successfully inserted: 'SHINE SA Sexual Health Week Community Grant Program in Australia' (SDGs: )
+2025-07-25 14:18:53,905 - __main__ - INFO - Found grant on listing page: 'CFAs: Zensurance Small Business Grant Program 2025 (Canada)'
+2025-07-25 14:18:56,553 - __main__ - INFO - Successfully inserted: 'CFAs: Zensurance Small Business Grant Program 2025 (Canada)' (SDGs: )
+2025-07-25 14:19:48,577 - __main__ - INFO - Finished processing 50 grants on page 1.
+2025-07-25 14:19:53,582 - __main__ - INFO - Attempting to scrape listing page: https://www2.fundsforngos.org/category/latest-funds-for-ngos/page/2/
+2025-07-25 14:19:55,845 - __main__ - INFO - Found grant on listing page: 'Esmée Fairbairn Communities and Collections Fund in UK'
+2025-07-25 14:19:58,093 - __main__ - INFO - Successfully inserted: 'Esmée Fairbairn Communities and Collections Fund in UK' (SDGs: )
+2025-07-25 14:20:00,094 - __main__ - INFO - Found grant on listing page: 'CFPs: Cedar Civil Society – Capacity Enhancement, Dialogue and Recovery (South Africa)'
+2025-07-25 14:20:02,381 - __main__ - INFO - Successfully inserted: 'CFPs: Cedar Civil Society – Capacity Enhancement, Dialogue and Recovery (South Africa)' (SDGs: )
+2025-07-25 14:20:04,383 - __main__ - INFO - Found grant on listing page: 'Apply for Arts and Creativity Grant Program (Australia)'
+2025-07-25 14:20:06,732 - __main__ - INFO - Successfully inserted: 'Apply for Arts and Creativity Grant Program (Australia)' (SDGs: sdg_goal_9_industry_innovation_and_infrastructure)
+2025-07-25 14:20:08,734 - __main__ - INFO - Found grant on listing page: 'Apply for International Showcase Fund (Reeperbahn Festival) – United Kingdom'
+2025-07-25 14:20:11,257 - __main__ - INFO - Successfully inserted: 'Apply for International Showcase Fund (Reeperbahn Festival) – United Kingdom' (SDGs: )
+2025-07-25 14:20:13,258 - __main__ - INFO - Found grant on listing page: 'Community Development Grant Program (Australia)'
+2025-07-25 14:20:15,508 - __main__ - INFO - Successfully inserted: 'Community Development Grant Program (Australia)' (SDGs: sdg_goal_16_peace_justice_and_strong_institutions)
+2025-07-25 14:20:17,511 - __main__ - INFO - Found grant on listing page: 'Applications open for Zero Waste Grant Programme in Turkey'
+2025-07-25 14:20:19,456 - __main__ - INFO - Successfully inserted: 'Applications open for Zero Waste Grant Programme in Turkey' (SDGs: sdg_goal_13_climate_action, sdg_goal_12_responsible_consumption_and_production)
+2025-07-25 14:20:21,457 - __main__ - INFO - Found grant on listing page: 'Call for Proposals: Journals-Humanities Grant Programme (Denmark)'
+2025-07-25 14:20:23,787 - __main__ - INFO - Successfully inserted: 'Call for Proposals: Journals-Humanities Grant Programme (Denmark)' (SDGs: )
+2025-07-25 14:20:25,788 - __main__ - INFO - Found grant on listing page: 'Senegal: Call for Proposals to Promote Peace & Citizenship'
+2025-07-25 14:20:27,893 - __main__ - INFO - Successfully inserted: 'Senegal: Call for Proposals to Promote Peace & Citizenship' (SDGs: sdg_goal_3_good_health_and_well_being, sdg_goal_10_reduced_inequalities)
+2025-07-25 14:20:29,894 - __main__ - INFO - Found grant on listing page: 'EU4Youth – Diversify the Youth Guarantee Partnership Models (Albania)'
+2025-07-25 14:20:32,034 - __main__ - INFO - Successfully inserted: 'EU4Youth – Diversify the Youth Guarantee Partnership Models (Albania)' (SDGs: )
+2025-07-25 14:20:34,036 - __main__ - INFO - Found grant on listing page: 'Pioneer City Partnership for Sustainable Small and Medium-Sized Towns in Austria'
+2025-07-25 14:20:37,311 - __main__ - INFO - Successfully inserted: 'Pioneer City Partnership for Sustainable Small and Medium-Sized Towns in Austria' (SDGs: )
+2025-07-25 14:20:39,318 - __main__ - INFO - Found grant on listing page: 'Applications open for Branching Out Fund (UK)'
+2025-07-25 14:20:41,896 - __main__ - INFO - Successfully inserted: 'Applications open for Branching Out Fund (UK)' (SDGs: )
+2025-07-25 14:20:43,897 - __main__ - INFO - Found grant on listing page: 'RFPs: Empowering Youth through Creativity Corners and Volunteer Engagement (Tajikistan)'
+2025-07-25 14:20:46,285 - __main__ - INFO - Successfully inserted: 'RFPs: Empowering Youth through Creativity Corners and Volunteer Engagement (Tajikistan)' (SDGs: sdg_goal_17_partnerships_for_the_goals)
+2025-07-25 14:20:48,310 - __main__ - INFO - Found grant on listing page: 'Training of Civil Servants and State Agents at Central and Provincial Levels On Sensitive and Specific Nutrition (Chad)'
+2025-07-25 14:20:51,090 - __main__ - INFO - Successfully inserted: 'Training of Civil Servants and State Agents at Central and Provincial Levels On Sensitive and Specific Nutrition (Chad)' (SDGs: sdg_goal_17_partnerships_for_the_goals)
+2025-07-25 14:20:53,092 - __main__ - INFO - Found grant on listing page: 'RFAs: Co-financing Projects of CSOs contracted within the Framework of EU Programs (Croatia)'
+2025-07-25 14:20:55,016 - __main__ - INFO - Successfully inserted: 'RFAs: Co-financing Projects of CSOs contracted within the Framework of EU Programs (Croatia)' (SDGs: )
+2025-07-25 14:20:57,019 - __main__ - INFO - Found grant on listing page: 'Network Rail Community Tree Planting Fund – United Kingdom'
+2025-07-25 14:20:58,995 - __main__ - INFO - Successfully inserted: 'Network Rail Community Tree Planting Fund – United Kingdom' (SDGs: )
+2025-07-25 14:21:00,997 - __main__ - INFO - Found grant on listing page: 'CFAs: Zensurance Small Business Grant Program 2025 (Canada)'
+2025-07-25 14:21:01,095 - __main__ - INFO - Grant 'CFAs: Zensurance Small Business Grant Program 2025 (Canada)' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:21:01,096 - __main__ - INFO - Found grant on listing page: 'Call for Proposal: Implementation of Lean Season Response Activities in Various Districts (Malawi)'
+2025-07-25 14:21:03,019 - __main__ - INFO - Successfully inserted: 'Call for Proposal: Implementation of Lean Season Response Activities in Various Districts (Malawi)' (SDGs: sdg_goal_2_zero_hunger)
+2025-07-25 14:21:05,020 - __main__ - INFO - Found grant on listing page: 'Non-University Research Education (PhD) Grant Programme (Denmark)'
+2025-07-25 14:21:07,694 - __main__ - INFO - Successfully inserted: 'Non-University Research Education (PhD) Grant Programme (Denmark)' (SDGs: )
+2025-07-25 14:21:09,696 - __main__ - INFO - Found grant on listing page: 'ScottishPower Foundation Annual Grants Programme in United Kingdom'
+2025-07-25 14:21:11,929 - __main__ - INFO - Successfully inserted: 'ScottishPower Foundation Annual Grants Programme in United Kingdom' (SDGs: sdg_goal_1_no_poverty, sdg_goal_10_reduced_inequalities)
+2025-07-25 14:21:13,931 - __main__ - INFO - Found grant on listing page: 'Open Call for Pre-graduate Scholarships – Medical Science (Denmark)'
+2025-07-25 14:21:16,488 - __main__ - INFO - Successfully inserted: 'Open Call for Pre-graduate Scholarships – Medical Science (Denmark)' (SDGs: )
+2025-07-25 14:21:18,490 - __main__ - INFO - Found grant on listing page: 'Active Southwark Olympic Legacy Fund in United Kingdom'
+2025-07-25 14:21:20,981 - __main__ - INFO - Successfully inserted: 'Active Southwark Olympic Legacy Fund in United Kingdom' (SDGs: )
+2025-07-25 14:21:22,983 - __main__ - INFO - Found grant on listing page: 'Request for Proposals: Explorative Network Humanities Grant Programme (Denmark)'
+2025-07-25 14:21:24,952 - __main__ - INFO - Successfully inserted: 'Request for Proposals: Explorative Network Humanities Grant Programme (Denmark)' (SDGs: )
+2025-07-25 14:21:26,954 - __main__ - INFO - Found grant on listing page: 'Call for Proposals: Canadian Medical Isotope Ecosystem Development Fund'
+2025-07-25 14:21:28,705 - __main__ - INFO - Successfully inserted: 'Call for Proposals: Canadian Medical Isotope Ecosystem Development Fund' (SDGs: sdg_goal_9_industry_innovation_and_infrastructure)
+2025-07-25 14:21:30,707 - __main__ - INFO - Found grant on listing page: 'Auckland Council Whau Local Grants Programme in New Zealand'
+2025-07-25 14:21:33,343 - __main__ - INFO - Successfully inserted: 'Auckland Council Whau Local Grants Programme in New Zealand' (SDGs: )
+2025-07-25 14:21:35,345 - __main__ - INFO - Found grant on listing page: 'Carlsberg Mindelegat Grants for Researchers in Denmark'
+2025-07-25 14:21:37,843 - __main__ - INFO - Successfully inserted: 'Carlsberg Mindelegat Grants for Researchers in Denmark' (SDGs: sdg_goal_9_industry_innovation_and_infrastructure)
+2025-07-25 14:21:39,844 - __main__ - INFO - Found grant on listing page: 'Apply Now: National Highways 3 Million Trees Project (UK)'
+2025-07-25 14:21:42,114 - __main__ - INFO - Successfully inserted: 'Apply Now: National Highways 3 Million Trees Project (UK)' (SDGs: )
+2025-07-25 14:21:44,118 - __main__ - INFO - Found grant on listing page: 'UKRI Gambling Harms Research Coordination Centre (United Kingdom)'
+2025-07-25 14:21:46,556 - __main__ - INFO - Successfully inserted: 'UKRI Gambling Harms Research Coordination Centre (United Kingdom)' (SDGs: sdg_goal_17_partnerships_for_the_goals)
+2025-07-25 14:21:48,558 - __main__ - INFO - Found grant on listing page: 'Strategic Fund for Culture and Arts Scheme 2025 (Ireland)'
+2025-07-25 14:21:50,258 - __main__ - INFO - Successfully inserted: 'Strategic Fund for Culture and Arts Scheme 2025 (Ireland)' (SDGs: )
+2025-07-25 14:21:52,259 - __main__ - INFO - Found grant on listing page: 'Music Creation and Audio Recording Grant Program – Canada'
+2025-07-25 14:21:54,771 - __main__ - INFO - Successfully inserted: 'Music Creation and Audio Recording Grant Program – Canada' (SDGs: )
+2025-07-25 14:21:56,784 - __main__ - INFO - Found grant on listing page: 'Sport and Recreation Infrastructure Grant Program (Australia)'
+2025-07-25 14:21:58,060 - __main__ - INFO - Successfully inserted: 'Sport and Recreation Infrastructure Grant Program (Australia)' (SDGs: )
+2025-07-25 14:22:00,062 - __main__ - INFO - Found grant on listing page: 'SP Energy Networks Community Tree Planting Fund (UK)'
+2025-07-25 14:22:01,880 - __main__ - INFO - Successfully inserted: 'SP Energy Networks Community Tree Planting Fund (UK)' (SDGs: )
+2025-07-25 14:22:03,882 - __main__ - INFO - Found grant on listing page: 'CFAs: Growing Canada’s Community Canopies Initiative'
+2025-07-25 14:22:05,791 - __main__ - INFO - Successfully inserted: 'CFAs: Growing Canada’s Community Canopies Initiative' (SDGs: )
+2025-07-25 14:22:07,793 - __main__ - INFO - Found grant on listing page: 'Call for Proposals: Theatres Trust Small Grant Programme – UK'
+2025-07-25 14:22:10,285 - __main__ - INFO - Successfully inserted: 'Call for Proposals: Theatres Trust Small Grant Programme – UK' (SDGs: )
+2025-07-25 14:22:12,287 - __main__ - INFO - Found grant on listing page: 'Council’s Event Grants and Sponsorship Program in Australia'
+2025-07-25 14:22:15,501 - __main__ - INFO - Successfully inserted: 'Council’s Event Grants and Sponsorship Program in Australia' (SDGs: )
+2025-07-25 14:22:22,010 - __main__ - INFO - Found grant on listing page: 'Request for Applications: Trees Outside Woodland Fund (UK)'
+2025-07-25 14:22:24,597 - __main__ - INFO - Successfully inserted: 'Request for Applications: Trees Outside Woodland Fund (UK)' (SDGs: )
+2025-07-25 14:22:26,599 - __main__ - INFO - Found grant on listing page: 'Northern Beaches Council Placemaking Grants in Australia'
+2025-07-25 14:22:29,937 - __main__ - INFO - Successfully inserted: 'Northern Beaches Council Placemaking Grants in Australia' (SDGs: )
+2025-07-25 14:22:31,939 - __main__ - INFO - Found grant on listing page: 'Call for Applications: Mental Health Small Grant Programme (UK)'
+2025-07-25 14:22:34,118 - __main__ - INFO - Successfully inserted: 'Call for Applications: Mental Health Small Grant Programme (UK)' (SDGs: )
+2025-07-25 14:22:44,119 - __main__ - INFO - Found grant on listing page: 'Apply for Creative Communities Projects – Canada'
+2025-07-25 14:22:46,558 - __main__ - INFO - Successfully inserted: 'Apply for Creative Communities Projects – Canada' (SDGs: )
+2025-07-25 14:22:48,561 - __main__ - INFO - Found grant on listing page: 'Applications open for NARF Project Grant Program – Canada'
+2025-07-25 14:22:50,753 - __main__ - INFO - Successfully inserted: 'Applications open for NARF Project Grant Program – Canada' (SDGs: )
+2025-07-25 14:22:52,756 - __main__ - INFO - Found grant on listing page: 'Toronto Arts Council announces Black Arts Projects (Canada)'
+2025-07-25 14:22:54,800 - __main__ - INFO - Successfully inserted: 'Toronto Arts Council announces Black Arts Projects (Canada)' (SDGs: )
+2025-07-25 14:22:56,802 - __main__ - INFO - Found grant on listing page: 'Call for EOIs: Capacity Assessment for CSOs/Small Government Organizations (Palestine)'
+2025-07-25 14:22:58,751 - __main__ - INFO - Successfully inserted: 'Call for EOIs: Capacity Assessment for CSOs/Small Government Organizations (Palestine)' (SDGs: sdg_goal_17_partnerships_for_the_goals)
+2025-07-25 14:23:00,752 - __main__ - INFO - Found grant on listing page: 'Entries open for Realization Long Documentary Grant Programme'
+2025-07-25 14:23:02,578 - __main__ - INFO - Successfully inserted: 'Entries open for Realization Long Documentary Grant Programme' (SDGs: )
+2025-07-25 14:23:04,581 - __main__ - INFO - Found grant on listing page: 'Request for proposals: CCAC Food and Nutrition Challenge 2025'
+2025-07-25 14:23:07,126 - __main__ - INFO - Successfully inserted: 'Request for proposals: CCAC Food and Nutrition Challenge 2025' (SDGs: )
+2025-07-25 14:23:09,128 - __main__ - INFO - Found grant on listing page: 'Impact Innovation: Net Zero Industry Initiative 2025 – Sweden'
+2025-07-25 14:23:11,174 - __main__ - INFO - Successfully inserted: 'Impact Innovation: Net Zero Industry Initiative 2025 – Sweden' (SDGs: )
+2025-07-25 14:23:13,176 - __main__ - INFO - Found grant on listing page: 'PARP – Inhibitor Combination Treatments Grant Program in United States'
+2025-07-25 14:23:14,906 - __main__ - INFO - Successfully inserted: 'PARP – Inhibitor Combination Treatments Grant Program in United States' (SDGs: )
+2025-07-25 14:23:16,911 - __main__ - INFO - Found grant on listing page: 'CFAs: Realization Minority Coproduction Feature Film, Long Animation Film and Documentary'
+2025-07-25 14:23:18,720 - __main__ - INFO - Successfully inserted: 'CFAs: Realization Minority Coproduction Feature Film, Long Animation Film and Documentary' (SDGs: )
+2025-07-25 14:23:20,732 - __main__ - INFO - Found grant on listing page: 'Call for CSOs: Sustainable Tourism Program in North Macedonia'
+2025-07-25 14:23:23,494 - __main__ - INFO - Successfully inserted: 'Call for CSOs: Sustainable Tourism Program in North Macedonia' (SDGs: sdg_goal_17_partnerships_for_the_goals, sdg_goal_12_responsible_consumption_and_production, sdg_goal_7_affordable_and_clean_energy)
+2025-07-25 14:24:15,517 - __main__ - INFO - Finished processing 50 grants on page 2.
+2025-07-25 14:24:20,518 - __main__ - INFO - Attempting to scrape listing page: https://www2.fundsforngos.org/category/latest-funds-for-ngos/page/3/
+2025-07-25 14:24:21,718 - __main__ - INFO - Found grant on listing page: 'NOFO: Early Detection and Response Pilot Project (United States)'
+2025-07-25 14:24:24,324 - __main__ - INFO - Successfully inserted: 'NOFO: Early Detection and Response Pilot Project (United States)' (SDGs: )
+2025-07-25 14:24:26,328 - __main__ - INFO - Found grant on listing page: 'Charles Hayward Foundation Overseas Grant Program in United Kingdom'
+2025-07-25 14:24:28,090 - __main__ - INFO - Successfully inserted: 'Charles Hayward Foundation Overseas Grant Program in United Kingdom' (SDGs: )
+2025-07-25 14:24:30,097 - __main__ - INFO - Found grant on listing page: 'CFPs: Community Mapping and Outreach Initiative for Children on the Move (Trinidad and Tobago)'
+2025-07-25 14:24:32,684 - __main__ - INFO - Successfully inserted: 'CFPs: Community Mapping and Outreach Initiative for Children on the Move (Trinidad and Tobago)' (SDGs: sdg_goal_4_quality_education)
+2025-07-25 14:24:34,688 - __main__ - INFO - Found grant on listing page: 'Round 2: Scaling Up Child Protection Case Management and Mental Health and Psychosocial Support Program (South Sudan)'
+2025-07-25 14:24:36,774 - __main__ - INFO - Successfully inserted: 'Round 2: Scaling Up Child Protection Case Management and Mental Health and Psychosocial Support Program (South Sudan)' (SDGs: )
+2025-07-25 14:24:38,776 - __main__ - INFO - Found grant on listing page: 'India: Young Innovators STEM Lab Program to empower Future Partners to the USA'
+2025-07-25 14:24:40,746 - __main__ - INFO - Successfully inserted: 'India: Young Innovators STEM Lab Program to empower Future Partners to the USA' (SDGs: )
+2025-07-25 14:24:46,783 - __main__ - INFO - Found grant on listing page: 'Grant Program to Document and Raise Awareness of LGBTQ+ Historic Sites (US)'
+2025-07-25 14:24:48,662 - __main__ - INFO - Successfully inserted: 'Grant Program to Document and Raise Awareness of LGBTQ+ Historic Sites (US)' (SDGs: )
+2025-07-25 14:24:55,032 - __main__ - INFO - Found grant on listing page: 'CFAs: Connecting Moroccan Youth with U.S. Space Science and Technology'
+2025-07-25 14:24:57,018 - __main__ - INFO - Successfully inserted: 'CFAs: Connecting Moroccan Youth with U.S. Space Science and Technology' (SDGs: )
+2025-07-25 14:24:59,019 - __main__ - INFO - Found grant on listing page: 'Applications open for Dance Projects Program in Canada'
+2025-07-25 14:25:01,487 - __main__ - INFO - Successfully inserted: 'Applications open for Dance Projects Program in Canada' (SDGs: )
+2025-07-25 14:25:03,492 - __main__ - INFO - Found grant on listing page: 'Strengthening the Capacity of CSOs to promote Accountable Governance in Gambia'
+2025-07-25 14:25:05,312 - __main__ - INFO - Successfully inserted: 'Strengthening the Capacity of CSOs to promote Accountable Governance in Gambia' (SDGs: sdg_goal_16_peace_justice_and_strong_institutions)
+2025-07-25 14:25:11,851 - __main__ - INFO - Found grant on listing page: 'EU Support to Strengthen Capacities of the Statistical Office of the Republic of Serbia'
+2025-07-25 14:25:13,903 - __main__ - INFO - Successfully inserted: 'EU Support to Strengthen Capacities of the Statistical Office of the Republic of Serbia' (SDGs: sdg_goal_9_industry_innovation_and_infrastructure, sdg_goal_8_decent_work_and_economic_growth)
+2025-07-25 14:25:15,904 - __main__ - INFO - Found grant on listing page: 'Integration: Mediums of Life Program in Guatemala'
+2025-07-25 14:25:17,548 - __main__ - INFO - Successfully inserted: 'Integration: Mediums of Life Program in Guatemala' (SDGs: )
+2025-07-25 14:25:19,551 - __main__ - INFO - Found grant on listing page: 'Community Strengthening and Gender-Based Violence Program in Guatemala'
+2025-07-25 14:25:21,858 - __main__ - INFO - Successfully inserted: 'Community Strengthening and Gender-Based Violence Program in Guatemala' (SDGs: sdg_goal_16_peace_justice_and_strong_institutions)
+2025-07-25 14:25:23,859 - __main__ - INFO - Found grant on listing page: 'UNHCR launches Basic Needs Program in Guatemala'
+2025-07-25 14:25:25,938 - __main__ - INFO - Successfully inserted: 'UNHCR launches Basic Needs Program in Guatemala' (SDGs: sdg_goal_3_good_health_and_well_being)
+2025-07-25 14:25:27,939 - __main__ - INFO - Found grant on listing page: 'Call for EOIs: Legal Assistance and Guidance	Program in Guatemala'
+2025-07-25 14:25:29,891 - __main__ - INFO - Successfully inserted: 'Call for EOIs: Legal Assistance and Guidance	Program in Guatemala' (SDGs: )
+2025-07-25 14:25:31,893 - __main__ - INFO - Found grant on listing page: 'Call for Research Ideas: ESA Phi-Lab Ireland'
+2025-07-25 14:25:34,332 - __main__ - INFO - Successfully inserted: 'Call for Research Ideas: ESA Phi-Lab Ireland' (SDGs: )
+2025-07-25 14:25:36,334 - __main__ - INFO - Found grant on listing page: 'Call for Proposals: Youth Challenge for Sustainable Value Chain Equipment (Sierra Leone)'
+2025-07-25 14:25:38,164 - __main__ - INFO - Successfully inserted: 'Call for Proposals: Youth Challenge for Sustainable Value Chain Equipment (Sierra Leone)' (SDGs: sdg_goal_7_affordable_and_clean_energy)
+2025-07-25 14:25:40,165 - __main__ - INFO - Found grant on listing page: 'Celebrating Local History, Heritage and Identity Grant in United Kingdom'
+2025-07-25 14:25:42,166 - __main__ - INFO - Successfully inserted: 'Celebrating Local History, Heritage and Identity Grant in United Kingdom' (SDGs: )
+2025-07-25 14:25:44,172 - __main__ - INFO - Found grant on listing page: 'CFPs: Further Strengthening the Capacity of the Free Legal Aid System in Ukraine'
+2025-07-25 14:25:46,911 - __main__ - INFO - Successfully inserted: 'CFPs: Further Strengthening the Capacity of the Free Legal Aid System in Ukraine' (SDGs: )
+2025-07-25 14:25:48,918 - __main__ - INFO - Found grant on listing page: 'Apply now for Visitor Event Grant in United Kingdom'
+2025-07-25 14:25:51,042 - __main__ - INFO - Successfully inserted: 'Apply now for Visitor Event Grant in United Kingdom' (SDGs: )
+2025-07-25 14:25:53,045 - __main__ - INFO - Found grant on listing page: 'U.S. Embassy Libreville PDS Annual Program Statement (Gabon)'
+2025-07-25 14:25:55,214 - __main__ - INFO - Successfully inserted: 'U.S. Embassy Libreville PDS Annual Program Statement (Gabon)' (SDGs: sdg_goal_9_industry_innovation_and_infrastructure)
+2025-07-25 14:25:57,216 - __main__ - INFO - Found grant on listing page: 'Call for Projects: Learning Differently 2025'
+2025-07-25 14:25:59,337 - __main__ - INFO - Successfully inserted: 'Call for Projects: Learning Differently 2025' (SDGs: )
+2025-07-25 14:26:01,339 - __main__ - INFO - Found grant on listing page: 'UNICEF Jordan Supported Young People Mental Health and Wellbeing Programme'
+2025-07-25 14:26:04,097 - __main__ - INFO - Successfully inserted: 'UNICEF Jordan Supported Young People Mental Health and Wellbeing Programme' (SDGs: )
+2025-07-25 14:26:06,099 - __main__ - INFO - Found grant on listing page: 'Open Call for Environmental and Publicly Beneficial Projects'
+2025-07-25 14:26:08,013 - __main__ - INFO - Successfully inserted: 'Open Call for Environmental and Publicly Beneficial Projects' (SDGs: )
+2025-07-25 14:26:13,897 - __main__ - INFO - Found grant on listing page: 'Applications open for SPLOT Values Program in Poland'
+2025-07-25 14:26:16,142 - __main__ - INFO - Successfully inserted: 'Applications open for SPLOT Values Program in Poland' (SDGs: )
+2025-07-25 14:26:18,153 - __main__ - INFO - Found grant on listing page: 'Call for Applications: School of Community Leaders 2.0 (Ukraine)'
+2025-07-25 14:26:20,232 - __main__ - INFO - Successfully inserted: 'Call for Applications: School of Community Leaders 2.0 (Ukraine)' (SDGs: sdg_goal_7_affordable_and_clean_energy)
+2025-07-25 14:26:26,807 - __main__ - INFO - Found grant on listing page: 'CFPs: Future-proof Large Rivers Program in Netherlands'
+2025-07-25 14:26:28,554 - __main__ - INFO - Successfully inserted: 'CFPs: Future-proof Large Rivers Program in Netherlands' (SDGs: )
+2025-07-25 14:26:30,563 - __main__ - INFO - Found grant on listing page: 'Social and Criminal Justice Grant Program in United Kingdom'
+2025-07-25 14:26:32,349 - __main__ - INFO - Successfully inserted: 'Social and Criminal Justice Grant Program in United Kingdom' (SDGs: )
+2025-07-25 14:26:34,366 - __main__ - INFO - Found grant on listing page: 'Submit Applications for Maungakiekie-Tamaki Local Grant Program – New Zealand'
+2025-07-25 14:26:36,471 - __main__ - INFO - Successfully inserted: 'Submit Applications for Maungakiekie-Tamaki Local Grant Program – New Zealand' (SDGs: )
+2025-07-25 14:26:38,481 - __main__ - INFO - Found grant on listing page: 'Coast Protection Board Community Participation Grants in Australia'
+2025-07-25 14:26:40,154 - __main__ - INFO - Successfully inserted: 'Coast Protection Board Community Participation Grants in Australia' (SDGs: )
+2025-07-25 14:26:42,156 - __main__ - INFO - Found grant on listing page: 'UK Space Agency announces Call for Climate Services'
+2025-07-25 14:26:44,513 - __main__ - INFO - Successfully inserted: 'UK Space Agency announces Call for Climate Services' (SDGs: )
+2025-07-25 14:26:46,515 - __main__ - INFO - Found grant on listing page: 'CFAs: Coast Protection Grant Program in Australia'
+2025-07-25 14:26:48,780 - __main__ - INFO - Successfully inserted: 'CFAs: Coast Protection Grant Program in Australia' (SDGs: )
+2025-07-25 14:26:50,781 - __main__ - INFO - Found grant on listing page: 'Strengthening Rural Communities Prepare and Recover Program in Australia'
+2025-07-25 14:26:53,525 - __main__ - INFO - Successfully inserted: 'Strengthening Rural Communities Prepare and Recover Program in Australia' (SDGs: sdg_goal_17_partnerships_for_the_goals)
+2025-07-25 14:26:55,527 - __main__ - INFO - Found grant on listing page: 'Strengthening Rural Communities Small and Stream Vital in Australia'
+2025-07-25 14:26:58,364 - __main__ - INFO - Successfully inserted: 'Strengthening Rural Communities Small and Stream Vital in Australia' (SDGs: sdg_goal_1_no_poverty, sdg_goal_17_partnerships_for_the_goals)
+2025-07-25 14:27:00,366 - __main__ - INFO - Found grant on listing page: 'Veni Grants for Researchers'
+2025-07-25 14:27:02,111 - __main__ - INFO - Successfully inserted: 'Veni Grants for Researchers' (SDGs: )
+2025-07-25 14:27:04,113 - __main__ - INFO - Found grant on listing page: 'Apply for Northumberland High Sheriff Awards Fund (UK)'
+2025-07-25 14:27:05,661 - __main__ - INFO - Successfully inserted: 'Apply for Northumberland High Sheriff Awards Fund (UK)' (SDGs: )
+2025-07-25 14:27:07,662 - __main__ - INFO - Found grant on listing page: 'Request for Applications: Manurewa Local Grant Program (New Zealand)'
+2025-07-25 14:27:09,813 - __main__ - INFO - Successfully inserted: 'Request for Applications: Manurewa Local Grant Program (New Zealand)' (SDGs: )
+2025-07-25 14:27:15,895 - __main__ - INFO - Found grant on listing page: 'Call for Proposals: Digital Competence Training for Teachers in Tanzania'
+2025-07-25 14:27:18,153 - __main__ - INFO - Successfully inserted: 'Call for Proposals: Digital Competence Training for Teachers in Tanzania' (SDGs: )
+2025-07-25 14:27:20,155 - __main__ - INFO - Found grant on listing page: 'Direct Action Visionary Grants in the United States'
+2025-07-25 14:27:22,106 - __main__ - INFO - Successfully inserted: 'Direct Action Visionary Grants in the United States' (SDGs: )
+2025-07-25 14:27:24,109 - __main__ - INFO - Found grant on listing page: 'Marian R. Stuart Grant Program in the United States'
+2025-07-25 14:27:25,891 - __main__ - INFO - Successfully inserted: 'Marian R. Stuart Grant Program in the United States' (SDGs: )
+2025-07-25 14:27:27,893 - __main__ - INFO - Found grant on listing page: 'Transport Heritage Grants Program in Australia'
+2025-07-25 14:27:29,863 - __main__ - INFO - Successfully inserted: 'Transport Heritage Grants Program in Australia' (SDGs: )
+2025-07-25 14:27:31,864 - __main__ - INFO - Found grant on listing page: 'CFPs: Addressing the Housing Affordability Crisis Research Grant Program (US)'
+2025-07-25 14:27:33,639 - __main__ - INFO - Successfully inserted: 'CFPs: Addressing the Housing Affordability Crisis Research Grant Program (US)' (SDGs: sdg_goal_11_sustainable_cities_and_communities, sdg_goal_17_partnerships_for_the_goals)
+2025-07-25 14:27:35,640 - __main__ - INFO - Found grant on listing page: 'Open Call for Small Organisational Development Grants 2025'
+2025-07-25 14:27:37,513 - __main__ - INFO - Successfully inserted: 'Open Call for Small Organisational Development Grants 2025' (SDGs: )
+2025-07-25 14:27:39,521 - __main__ - INFO - Found grant on listing page: 'Submissions open for Puketapapa Local Grant Program (New Zealand)'
+2025-07-25 14:27:42,264 - __main__ - INFO - Successfully inserted: 'Submissions open for Puketapapa Local Grant Program (New Zealand)' (SDGs: )
+2025-07-25 14:28:38,038 - __main__ - INFO - Finished processing 50 grants on page 3.
+2025-07-25 14:28:43,041 - __main__ - INFO - 
+Finished scraping process. 150 grants processed and attempted to be stored/updated.
+2025-07-25 14:28:43,042 - __main__ - INFO - ================================================================================
+
+2025-07-25 14:35:00,286 - __main__ - INFO - 
+================================================================================
+2025-07-25 14:35:00,286 - __main__ - INFO - Starting NGO Grant Scraper (FundsforNGOs.org) - Deep Scrape & Pagination
+2025-07-25 14:35:00,286 - __main__ - INFO - This will fetch grants from multiple pages, classify SDGs, and store them in your DB.
+2025-07-25 14:35:00,293 - __main__ - INFO - Existing grants with full details will be skipped.
+2025-07-25 14:35:00,293 - __main__ - INFO - ================================================================================
+
+2025-07-25 14:35:00,293 - __main__ - INFO - Attempting to scrape listing page: https://www2.fundsforngos.org/category/latest-funds-for-ngos/page/1/
+2025-07-25 14:35:02,385 - __main__ - INFO - Found grant on listing page: 'Applications open for Health Care Advocates International Fund (US)'
+2025-07-25 14:35:02,460 - __main__ - INFO - Grant 'Applications open for Health Care Advocates International Fund (US)' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:02,461 - __main__ - INFO - Found grant on listing page: 'Call for Proposals: Operational Digital Platforms'
+2025-07-25 14:35:02,549 - __main__ - INFO - Grant 'Call for Proposals: Operational Digital Platforms' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:02,549 - __main__ - INFO - Found grant on listing page: 'Call for EOIs: Implementing Partner for the Protection, Return and Reintegration Program for Migrants in Chad'
+2025-07-25 14:35:02,620 - __main__ - INFO - Grant 'Call for EOIs: Implementing Partner for the Protection, Return and Reintegration Program for Migrants in Chad' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:02,622 - __main__ - INFO - Found grant on listing page: 'Call for Proposals to Write a Book on the Mountain Gorilla Ecosystem in Rwanda'
+2025-07-25 14:35:02,683 - __main__ - INFO - Grant 'Call for Proposals to Write a Book on the Mountain Gorilla Ecosystem in Rwanda' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:02,683 - __main__ - INFO - Found grant on listing page: 'ACNI Small Capital Grants Programme in United Kingdom'
+2025-07-25 14:35:02,763 - __main__ - INFO - Grant 'ACNI Small Capital Grants Programme in United Kingdom' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:02,763 - __main__ - INFO - Found grant on listing page: 'Call for Applications: De Boer-van Staveren Fund (Netherlands)'
+2025-07-25 14:35:02,837 - __main__ - INFO - Grant 'Call for Applications: De Boer-van Staveren Fund (Netherlands)' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:02,840 - __main__ - INFO - Found grant on listing page: 'SSF call for EU Horizon Europe Research Application Support (Sweden)'
+2025-07-25 14:35:02,913 - __main__ - INFO - Grant 'SSF call for EU Horizon Europe Research Application Support (Sweden)' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:02,914 - __main__ - INFO - Found grant on listing page: 'Call for Letters of Inquiry for Small Grants – Mediterranean Basin Biodiversity Hotspot'
+2025-07-25 14:35:02,975 - __main__ - INFO - Grant 'Call for Letters of Inquiry for Small Grants – Mediterranean Basin Biodiversity Hotspot' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:02,975 - __main__ - INFO - Found grant on listing page: 'Gender Equality & Digital Safety: €6M in Grants'
+2025-07-25 14:35:03,057 - __main__ - INFO - Grant 'Gender Equality & Digital Safety: €6M in Grants' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:03,058 - __main__ - INFO - Found grant on listing page: 'Grants for Professionals Documenting the War in Ukraine'
+2025-07-25 14:35:03,131 - __main__ - INFO - Grant 'Grants for Professionals Documenting the War in Ukraine' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:03,132 - __main__ - INFO - Found grant on listing page: 'CFAs: Empowering Young People through Skill-Building and Engagement Opportunities in Syria'
+2025-07-25 14:35:03,203 - __main__ - INFO - Grant 'CFAs: Empowering Young People through Skill-Building and Engagement Opportunities in Syria' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:03,207 - __main__ - INFO - Found grant on listing page: 'Call for RFPs: Selection of Cooperating Partner for the Implementation of Vocational Training and Livelihoods in Palestine'
+2025-07-25 14:35:03,283 - __main__ - INFO - Grant 'Call for RFPs: Selection of Cooperating Partner for the Implementation of Vocational Training and Livelihoods in Palestine' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:03,283 - __main__ - INFO - Found grant on listing page: 'CFPs: Support Implementation of Protection Sensitive Reception Conditions, Linkages of Refugees/Asylum Seekers and Local Communities (Serbia)'
+2025-07-25 14:35:03,364 - __main__ - INFO - Grant 'CFPs: Support Implementation of Protection Sensitive Reception Conditions, Linkages of Refugees/Asylum Seekers and Local Communities (Serbia)' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:03,365 - __main__ - INFO - Found grant on listing page: 'CFPs: Legal Assistance and Advocacy in Asylum Procedures and Statelessness Prevention (Serbia)'
+2025-07-25 14:35:03,434 - __main__ - INFO - Grant 'CFPs: Legal Assistance and Advocacy in Asylum Procedures and Statelessness Prevention (Serbia)' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:03,436 - __main__ - INFO - Found grant on listing page: 'Toronto Arts Council’s Music Projects Grant in Canada'
+2025-07-25 14:35:03,504 - __main__ - INFO - Grant 'Toronto Arts Council’s Music Projects Grant in Canada' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:03,507 - __main__ - INFO - Found grant on listing page: 'Applications open for Theatre Projects Grant Program in Canada'
+2025-07-25 14:35:03,582 - __main__ - INFO - Grant 'Applications open for Theatre Projects Grant Program in Canada' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:03,584 - __main__ - INFO - Found grant on listing page: 'Toronto Arts Council launches Open Door Grant Program (Canada)'
+2025-07-25 14:35:03,653 - __main__ - INFO - Grant 'Toronto Arts Council launches Open Door Grant Program (Canada)' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:03,653 - __main__ - INFO - Found grant on listing page: 'Visual/Media Arts Projects Grants in Canada'
+2025-07-25 14:35:03,718 - __main__ - INFO - Grant 'Visual/Media Arts Projects Grants in Canada' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:03,718 - __main__ - INFO - Found grant on listing page: 'Call for Applications: Farm Credit Canada AgriSpirit Fund'
+2025-07-25 14:35:03,786 - __main__ - INFO - Grant 'Call for Applications: Farm Credit Canada AgriSpirit Fund' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:03,866 - __main__ - INFO - Found grant on listing page: 'Prevention and Response to Gender-Based Violence in Territories Impacted by the Cabo Delgado Crisis (Mozambique)'
+2025-07-25 14:35:03,933 - __main__ - INFO - Grant 'Prevention and Response to Gender-Based Violence in Territories Impacted by the Cabo Delgado Crisis (Mozambique)' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:03,935 - __main__ - INFO - Found grant on listing page: 'United States: Yamaha Outdoor Access Initiative 2025'
+2025-07-25 14:35:04,001 - __main__ - INFO - Grant 'United States: Yamaha Outdoor Access Initiative 2025' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:04,003 - __main__ - INFO - Found grant on listing page: 'Applications open for Arts Centre Funding Programme in Ireland'
+2025-07-25 14:35:04,068 - __main__ - INFO - Grant 'Applications open for Arts Centre Funding Programme in Ireland' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:04,068 - __main__ - INFO - Found grant on listing page: 'Toowoomba Regional Council Community Support Grant Program in Australia'
+2025-07-25 14:35:04,133 - __main__ - INFO - Grant 'Toowoomba Regional Council Community Support Grant Program in Australia' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:04,133 - __main__ - INFO - Found grant on listing page: 'CFAs: Community Economic Development Grant Program in Australia'
+2025-07-25 14:35:04,203 - __main__ - INFO - Grant 'CFAs: Community Economic Development Grant Program in Australia' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:04,207 - __main__ - INFO - Found grant on listing page: 'Toowoomba Regional Council Youth Grants Program in Australia'
+2025-07-25 14:35:04,283 - __main__ - INFO - Grant 'Toowoomba Regional Council Youth Grants Program in Australia' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:04,456 - __main__ - INFO - Found grant on listing page: 'Sport and Recreation Community Grants Program in Australia'
+2025-07-25 14:35:04,529 - __main__ - INFO - Grant 'Sport and Recreation Community Grants Program in Australia' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:04,530 - __main__ - INFO - Found grant on listing page: 'Sports Tourism Event Grant Program in Australia'
+2025-07-25 14:35:04,605 - __main__ - INFO - Grant 'Sports Tourism Event Grant Program in Australia' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:04,606 - __main__ - INFO - Found grant on listing page: 'Request for Applications: Media Artists Program (Canada)'
+2025-07-25 14:35:04,677 - __main__ - INFO - Grant 'Request for Applications: Media Artists Program (Canada)' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:04,677 - __main__ - INFO - Found grant on listing page: 'Preventive Health and Health Services Block Grant in the US'
+2025-07-25 14:35:04,746 - __main__ - INFO - Grant 'Preventive Health and Health Services Block Grant in the US' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:04,746 - __main__ - INFO - Found grant on listing page: 'CFPs: Tribal Adult Protective Services Demonstration Grants in the US'
+2025-07-25 14:35:04,818 - __main__ - INFO - Grant 'CFPs: Tribal Adult Protective Services Demonstration Grants in the US' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:04,818 - __main__ - INFO - Found grant on listing page: 'CFPs: Toowoomba Regional Council Environment Grant Program in Australia'
+2025-07-25 14:35:04,886 - __main__ - INFO - Grant 'CFPs: Toowoomba Regional Council Environment Grant Program in Australia' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:04,891 - __main__ - INFO - Found grant on listing page: 'Elder Justice Innovation Grants Program (United States)'
+2025-07-25 14:35:04,966 - __main__ - INFO - Grant 'Elder Justice Innovation Grants Program (United States)' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:04,967 - __main__ - INFO - Found grant on listing page: 'NOFO: Innovative Rehabilitation Training Program in the US'
+2025-07-25 14:35:05,034 - __main__ - INFO - Grant 'NOFO: Innovative Rehabilitation Training Program in the US' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:05,034 - __main__ - INFO - Found grant on listing page: 'India: WCT-Biodiversity, Ecosystems, and Endangered Species Grants Programme 2025'
+2025-07-25 14:35:05,103 - __main__ - INFO - Grant 'India: WCT-Biodiversity, Ecosystems, and Endangered Species Grants Programme 2025' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:05,103 - __main__ - INFO - Found grant on listing page: 'Uplift Young Lives: Global Funding for Child-Focused Projects'
+2025-07-25 14:35:05,184 - __main__ - INFO - Grant 'Uplift Young Lives: Global Funding for Child-Focused Projects' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:05,185 - __main__ - INFO - Found grant on listing page: 'Call for Proposals: SME-led Plastic Recycling for a Circular Economy in Pakistan'
+2025-07-25 14:35:05,253 - __main__ - INFO - Grant 'Call for Proposals: SME-led Plastic Recycling for a Circular Economy in Pakistan' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:05,257 - __main__ - INFO - Found grant on listing page: 'Climate Policy and Governance and Clean Energy in South Africa'
+2025-07-25 14:35:05,334 - __main__ - INFO - Grant 'Climate Policy and Governance and Clean Energy in South Africa' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:05,334 - __main__ - INFO - Found grant on listing page: 'Open Call: Goethe-Institut Project Space Grant'
+2025-07-25 14:35:05,403 - __main__ - INFO - Grant 'Open Call: Goethe-Institut Project Space Grant' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:05,403 - __main__ - INFO - Found grant on listing page: 'ScottishPower Foundation Art for Climate Fund in United Kingdom'
+2025-07-25 14:35:05,469 - __main__ - INFO - Grant 'ScottishPower Foundation Art for Climate Fund in United Kingdom' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:05,469 - __main__ - INFO - Found grant on listing page: 'JFPP Small Grant Program in Japan and Cambodia'
+2025-07-25 14:35:05,549 - __main__ - INFO - Grant 'JFPP Small Grant Program in Japan and Cambodia' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:05,550 - __main__ - INFO - Found grant on listing page: 'CFPs: Platform Development for Human Rights and Gender Courses – Indonesia'
+2025-07-25 14:35:05,618 - __main__ - INFO - Grant 'CFPs: Platform Development for Human Rights and Gender Courses – Indonesia' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:05,618 - __main__ - INFO - Found grant on listing page: 'SHINE SA Sexual Health Week Community Grant Program in Australia'
+2025-07-25 14:35:05,687 - __main__ - INFO - Grant 'SHINE SA Sexual Health Week Community Grant Program in Australia' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:05,689 - __main__ - INFO - Found grant on listing page: 'Call for Applications: “People and Places” Medium Grant Program (UK)'
+2025-07-25 14:35:05,781 - __main__ - INFO - Grant 'Call for Applications: “People and Places” Medium Grant Program (UK)' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:05,783 - __main__ - INFO - Found grant on listing page: 'SVRI Grant – GBV in Higher Education Institutions with a Focus on STEM'
+2025-07-25 14:35:05,852 - __main__ - INFO - Grant 'SVRI Grant – GBV in Higher Education Institutions with a Focus on STEM' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:05,853 - __main__ - INFO - Found grant on listing page: 'Deaf and Disabled People’s Organisations Fund in United Kingdom'
+2025-07-25 14:35:05,919 - __main__ - INFO - Grant 'Deaf and Disabled People’s Organisations Fund in United Kingdom' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:05,919 - __main__ - INFO - Found grant on listing page: 'Call for Entries: National Lottery Awards for All England – Environment (UK)'
+2025-07-25 14:35:06,000 - __main__ - INFO - Grant 'Call for Entries: National Lottery Awards for All England – Environment (UK)' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:06,003 - __main__ - INFO - Found grant on listing page: 'Spark Grants to Advance Gender Equity in the U.S. and Israel'
+2025-07-25 14:35:06,163 - __main__ - INFO - Grant 'Spark Grants to Advance Gender Equity in the U.S. and Israel' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:06,163 - __main__ - INFO - Found grant on listing page: 'Call for Proposals: Journals-Humanities Grant Programme (Denmark)'
+2025-07-25 14:35:06,236 - __main__ - INFO - Grant 'Call for Proposals: Journals-Humanities Grant Programme (Denmark)' already exists with full details. Skipping deep scrape and re-insertion.
+2025-07-25 14:35:56,262 - __main__ - INFO - Finished processing 50 grants on page 1.
+2025-07-25 14:36:01,264 - __main__ - INFO - 
+Finished scraping process. 50 grants processed and attempted to be stored/updated.
+2025-07-25 14:36:01,264 - __main__ - INFO - ================================================================================
+

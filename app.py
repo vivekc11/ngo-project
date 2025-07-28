@@ -1,7 +1,8 @@
+# app.py
 from flask import Flask, render_template, request
 from grant_matcher import match_all_grants
 from utils import extract_text_from_url, preprocess_text, nlp, validate_url
-from typing import List, Dict, Optional, Tuple # Corrected and added typing imports
+from typing import List, Dict, Optional, Tuple
 
 app = Flask(__name__)
 

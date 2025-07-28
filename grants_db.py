@@ -3,12 +3,13 @@ import os
 import psycopg2
 from psycopg2.extras import RealDictCursor
 from dotenv import load_dotenv
-from typing import List, Dict, Optional # Corrected and added typing imports
+from typing import List, Dict, Optional
 from datetime import datetime
+from pprint import pprint
 
 load_dotenv()
 
-DB_CONFIG: Dict[str, str] = { # Added type hint
+DB_CONFIG: Dict[str, str] = {
     "dbname": os.getenv("DB_NAME"),
     "user": os.getenv("DB_USER"),
     "password": os.getenv("DB_PASSWORD"),
@@ -27,7 +28,7 @@ def insert_grant(grant: Dict) -> bool:
     Uses ON CONFLICT (link_hash) DO NOTHING to prevent errors on duplicates.
     Returns True on successful insertion (or if already exists), False on other errors.
     """
-    query: str = """ # Added type hint
+    query: str = """
         INSERT INTO grants (
             link_hash, link, title, description_short, description_long,
             application_deadline, focus_areas, target_beneficiaries, geographic_eligibility,
@@ -44,6 +45,9 @@ def insert_grant(grant: Dict) -> bool:
     try:
         conn = get_connection()
         with conn.cursor() as cur:
+            print("[DEBUG] Grant to insert:")
+            pprint(grant)
+            print("-" * 80)
             cur.execute(query, grant)
         conn.commit()
         return True
@@ -65,8 +69,8 @@ def update_grant(grant: Dict) -> bool:
     Only updates the fields provided in the 'grant' dictionary (excluding link_hash).
     Returns True if the grant was updated, False otherwise.
     """
-    set_clauses: List[str] = [] # Added type hint
-    update_data: Dict = {} # Added type hint
+    set_clauses: List[str] = []
+    update_data: Dict = {}
     for key, value in grant.items():
         if key not in ['link_hash', 'scraped_at']:
             set_clauses.append(f"{key} = %({key})s")
@@ -76,7 +80,7 @@ def update_grant(grant: Dict) -> bool:
         print("No valid fields provided for update.")
         return False
 
-    query: str = f""" # Added type hint
+    query: str = f"""
         UPDATE grants
         SET {', '.join(set_clauses)}, updated_at = CURRENT_TIMESTAMP
         WHERE link_hash = %(link_hash)s;

@@ -9,11 +9,10 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sentence_transformers import SentenceTransformer
 import spacy
 import hashlib
-from typing import List, Dict, Optional # Corrected and added typing imports
+from typing import List, Dict, Optional
 
 # Setup models
 try:
-    # Ensure this model is downloaded: python -m spacy download en_core_web_sm
     nlp = spacy.load("en_core_web_sm")
 except Exception as e:
     print(f"Warning: spaCy model 'en_core_web_sm' not loaded. Please run 'python -m spacy download en_core_web_sm'. Error: {e}")
@@ -26,7 +25,7 @@ except Exception as e:
     sentence_model = None
 
 # Similarity weights (tune as needed)
-SIMILARITY_WEIGHTS: Dict[str, float] = { # Added type hint
+SIMILARITY_WEIGHTS: Dict[str, float] = {
     "embedding_sim": 0.4,
     "tfidf_sim": 0.2,
     "keyword_overlap": 0.1,
