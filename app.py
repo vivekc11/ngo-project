@@ -10,19 +10,22 @@ app = Flask(__name__)
 def index() -> str:
     match_results: List[Dict] = []
     error_message: Optional[str] = None
+    url = ""
 
     if request.method == "POST":
         url: str = request.form.get("url", "").strip()
-        if not validate_url(url):
-            return render_template("index.html", error="Invalid URL. Please enter a valid HTTP/HTTPS URL.")
-
-        website_raw_text: str = extract_text_from_url(url)
-        if website_raw_text.startswith("Error"):
-            error_message = website_raw_text
+        if not url:
+            error_message = "Please enter a website URL."
+        elif not validate_url(url):
+            error_message = "Invalid URL. Please enter a valid HTTP/HTTPS URL."
         else:
-            website_processed_text: str = preprocess_text(website_raw_text)
-            website_doc = nlp(website_processed_text) if nlp else None
+            website_raw_text: str = extract_text_from_url(url)
+            if website_raw_text.startswith("Error"):
+                error_message = website_raw_text
+            else:
+                website_processed_text: str = preprocess_text(website_raw_text)
+                website_doc = nlp(website_processed_text) if nlp else None
 
-            match_results, error_message = match_all_grants(website_raw_text, website_doc)
+                match_results, error_message = match_all_grants(website_raw_text, website_doc)
 
-    return render_template("index.html", matches=match_results, error=error_message)
+    return render_template("index.html", matches=match_results, error=error_message, url=url)

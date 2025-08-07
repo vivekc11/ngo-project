@@ -2,7 +2,7 @@
 import re
 import asyncio
 import aiohttp
-from bs4 import BeautifulSoup
+from lxml.html import fromstring
 from urllib.parse import urlparse
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
@@ -10,6 +10,7 @@ from sentence_transformers import SentenceTransformer
 import spacy
 import hashlib
 from typing import List, Dict, Optional
+from config import MAX_TEXT_LENGTH
 
 # Setup models
 try:
@@ -54,10 +55,14 @@ async def extract_text_from_url_async(url: str) -> str:
         async with aiohttp.ClientSession() as session:
             async with session.get(url, timeout=20, headers=headers) as response:
                 response.raise_for_status()
-                soup = BeautifulSoup(await response.text(), "html.parser")
-                for tag in soup(["script", "style", "noscript", "header", "footer", "nav"]):
-                    tag.decompose()
-                return soup.get_text(separator=" ", strip=True)[:15000]
+                tree = fromstring(await response.text())
+                
+                # Use XPath to remove elements not relevant to text content
+                for tag in tree.xpath('//script|//style|//noscript|//header|//footer|//nav'):
+                    tag.getparent().remove(tag)
+
+                text = ' '.join(tree.xpath('//text()')).strip()
+                return text[:MAX_TEXT_LENGTH]
     except aiohttp.ClientError as e:
         return f"Error: Network or client issue during scraping: {e}"
     except Exception as e:

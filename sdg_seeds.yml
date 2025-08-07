@@ -1,3 +1,5 @@
+#sdg_seeds.yml
+
 nlu:
 - intent: sdg_goal_1_no_poverty
   examples: |

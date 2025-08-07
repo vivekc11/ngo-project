@@ -55,9 +55,9 @@ def match_grant(website_raw_text: str, website_doc, grant: Dict) -> Dict:
             pass
 
     tfidf_score: float = compute_tfidf_similarity(website_text_clean, grant_text_clean)
-    
+
     db_keywords: set = set(preprocess_text(kw) for kw in grant.get("keywords", []) if kw)
-    
+
     grant_keywords: set = db_keywords
     if not grant_keywords and nlp:
         grant_doc_for_keywords = nlp(preprocess_text(grant_text)) # Use grant_text for keywords if DB is empty
@@ -70,7 +70,7 @@ def match_grant(website_raw_text: str, website_doc, grant: Dict) -> Dict:
         if preprocess_text(area) in website_text_clean:
             sector_match = True
             break
-    
+
     pop_match: bool = False
     for pop_target in grant.get("target_beneficiaries", []):
         if preprocess_text(pop_target) in website_text_clean:
@@ -114,7 +114,7 @@ def match_all_grants(website_raw_text: str, website_doc) -> Tuple[List[Dict], Op
 
     for grant in GRANTS_FROM_DB:
         match_data = match_grant(website_raw_text, website_doc, grant)
-        
+
         match_results.append({
             "title": grant.get("title", "N/A"),
             "description": grant.get("description_short", ""),
