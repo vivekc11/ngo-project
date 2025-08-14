@@ -1,1 +1,1 @@
-this is the very first primitive version of the project handed to me.
+This is v0, some tinkering and trails with the project.
