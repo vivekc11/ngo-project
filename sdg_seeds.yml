@@ -1,0 +1,179 @@
+nlu:
+- intent: sdg_goal_1_no_poverty
+  examples: |
+    - end poverty in all its forms everywhere
+    - eradicate extreme poverty
+    - no more poverty
+    - poverty reduction programs
+    - helping the ultra poor
+    - ensuring social protection
+    - equal rights to economic resources
+    - microfinance for the poor
+
+- intent: sdg_goal_2_zero_hunger
+  examples: |
+    - end hunger
+    - achieve food security
+    - improve nutrition
+    - sustainable agriculture
+    - zero hunger initiatives
+    - food access for all
+    - ending all forms of malnutrition
+    - doubling agricultural productivity
+
+- intent: sdg_goal_3_good_health_and_well_being
+  examples: |
+    - ensure healthy lives
+    - promote well-being for all ages
+    - health services access
+    - maternal and child health
+    - combat communicable diseases
+    - mental health support
+    - universal health coverage
+    - reducing premature mortality
+
+- intent: sdg_goal_4_quality_education
+  examples: |
+    - inclusive and equitable quality education
+    - promote lifelong learning opportunities
+    - literacy programs
+    - access to education
+    - vocational training
+    - quality primary and secondary education
+    - early childhood development
+    - global citizenship education
+
+- intent: sdg_goal_5_gender_equality
+  examples: |
+    - achieve gender equality
+    - empower all women and girls
+    - end discrimination against women
+    - eliminate gender-based violence
+    - equal opportunities for women
+    - women's leadership
+    - sexual and reproductive health rights
+    - women's economic empowerment
+
+- intent: sdg_goal_6_clean_water_and_sanitation
+  examples: |
+    - ensure availability and sustainable management of water and sanitation for all
+    - clean water access
+    - sanitation facilities
+    - hygiene promotion
+    - water pollution prevention
+    - integrated water resources management
+    - improving water quality
+
+- intent: sdg_goal_7_affordable_and_clean_energy
+  examples: |
+    - ensure access to affordable, reliable, sustainable, and modern energy for all
+    - renewable energy projects
+    - clean energy solutions
+    - energy efficiency
+    - increasing global share of renewable energy
+    - expanding infrastructure for clean energy
+    - modern energy access for all
+
+- intent: sdg_goal_8_decent_work_and_economic_growth
+  examples: |
+    - promote sustained, inclusive and sustainable economic growth
+    - full and productive employment
+    - decent work for all
+    - protecting labor rights
+    - promoting tourism
+    - reducing unemployment
+    - supporting small and medium-sized enterprises
+    - promoting innovation
+
+- intent: sdg_goal_9_industry_innovation_and_infrastructure
+  examples: |
+    - build resilient infrastructure
+    - promote inclusive and sustainable industrialization
+    - foster innovation
+    - technology development
+    - rural infrastructure
+    - upgrading infrastructure
+    - scientific research
+    - access to information and communication technology
+
+- intent: sdg_goal_10_reduced_inequalities
+  examples: |
+    - reduce inequality within and among countries
+    - income equality
+    - social inclusion
+    - non-discrimination
+    - empowering the marginalized
+    - promoting universal social, economic and political inclusion
+    - fostering global financial stability
+
+- intent: sdg_goal_11_sustainable_cities_and_communities
+  examples: |
+    - make cities and human settlements inclusive, safe, resilient and sustainable
+    - urban development
+    - sustainable urbanization
+    - safe housing
+    - accessible green public spaces
+    - disaster risk reduction
+    - protecting cultural and natural heritage
+
+- intent: sdg_goal_12_responsible_consumption_and_production
+  examples: |
+    - ensure sustainable consumption and production patterns
+    - waste reduction
+    - recycling programs
+    - sustainable resource management
+    - efficient use of natural resources
+    - sustainable tourism
+    - reducing food waste
+
+- intent: sdg_goal_13_climate_action
+  examples: |
+    - take urgent action to combat climate change and its impacts
+    - climate change mitigation
+    - adaptation strategies
+    - reducing greenhouse gas emissions
+    - climate education
+    - strengthening resilience to climate hazards
+    - climate finance
+
+- intent: sdg_goal_14_life_below_water
+  examples: |
+    - conserve and sustainably use the oceans, seas and marine resources for sustainable development
+    - marine conservation
+    - ocean protection
+    - combating marine pollution
+    - sustainable fishing
+    - protecting marine and coastal ecosystems
+    - addressing ocean acidification
+
+- intent: sdg_goal_15_life_on_land
+  examples: |
+    - protect, restore and promote sustainable use of terrestrial ecosystems
+    - sustainably manage forests
+    - combat desertification
+    - halt and reverse land degradation
+    - halt biodiversity loss
+    - combating poaching and trafficking
+    - land restoration
+
+- intent: sdg_goal_16_peace_justice_and_strong_institutions
+  examples: |
+    - promote peaceful and inclusive societies for sustainable development
+    - provide access to justice for all
+    - build effective, accountable and inclusive institutions at all levels
+    - reducing violence
+    - fighting corruption
+    - good governance
+    - access to information
+    - protecting fundamental freedoms
+
+- intent: sdg_goal_17_partnerships_for_the_goals
+  examples: |
+    - strengthen the means of implementation and revitalize the global partnership for sustainable development
+    - global partnerships
+    - international cooperation
+    - multi-stakeholder partnerships
+    - technology transfer
+    - capacity building
+    - data and monitoring for SDGs
+    - finance for development
