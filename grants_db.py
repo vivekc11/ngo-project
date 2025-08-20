@@ -80,6 +80,8 @@ def update_grant(grant: Dict) -> bool:
     try:
         conn = get_connection()
         with conn.cursor() as cur:
+            # For debugging, log the actual query that will be executed
+            print(cur.mogrify(query, update_data).decode('utf-8'))
             cur.execute(query, update_data)
         conn.commit()
         return cur.rowcount > 0
